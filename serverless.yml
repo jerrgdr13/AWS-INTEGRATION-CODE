@@ -1,0 +1,29 @@
+service: aws-python-post-http-endpoint
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python3.7 # or python3.7, supported as of November 2018
+
+#package:
+  # exclude:
+  #     - _**
+  #     - _*
+  #     - _*init.php*
+  #     - composer*
+#  include:
+#    - package/*
+
+functions:
+  trainingEndpoint:
+    handler: handler.post_endpoint
+    layers:
+      - {Ref: PythonLambdaLayer}
+    events:
+      - http:
+          path: users
+          method: post
+layers:
+  python:
+    path: ./
