@@ -1,19 +1,14 @@
-service: aws-python-post-http-endpoint
+service: serverless
 
 frameworkVersion: ">=1.2.0 <2.0.0"
 
 provider:
   name: aws
   runtime: python3.7 # or python3.7, supported as of November 2018
+  stage: dev
+  region: us-east-1
+  profile: DevUser
 
-#package:
-  # exclude:
-  #     - _**
-  #     - _*
-  #     - _*init.php*
-  #     - composer*
-#  include:
-#    - package/*
 
 functions:
   trainingEndpoint:
