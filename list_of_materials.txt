@@ -1,0 +1,25 @@
+Overview of an API
+Overview of a Microservice
+Overview of HTTP methods:
+    GET, POST, PUT, DELETE
+Tools are we going to use:
+    AWS
+        Create account
+    AWS Lambda
+        https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+    AWS CLI
+        https://aws.amazon.com/cli/
+        https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
+        https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+    Serverless
+        https://www.serverless.com/framework/docs/getting-started/
+What language are we going to use
+    Python
+Libraries to be used
+    https://requests.readthedocs.io/en/master/
+    - Create the 'setup.cfg' file. 
+        [install]
+        prefix=
+    - sudo pip3 install -t . requests
+Other Tools:
+    https://reqres.in/
